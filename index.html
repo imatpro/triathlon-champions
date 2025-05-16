@@ -167,6 +167,14 @@ font-size: 2.5rem;
 margin-bottom: 1rem;
 color: var(--secondary-color);
 }
+.discipline-image {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 1rem;
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
 .cta-section {
 background-color: var(--primary-color);
 color: white;
@@ -233,6 +241,9 @@ font-size: 1.2rem;
 .info-card, .discipline-card {
 min-width: 100%;
 }
+.discipline-image {
+height: 180px;
+}
 }
 </style>
 </head>
@@ -245,35 +256,7 @@ min-width: 100%;
 </div>
 </header>
 
-<!-- Nouvelle section galerie de photos -->
-<section class="photo-gallery">
-  <div class="gallery-container">
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_evddzvevddzvevdd.jpeg" alt="Triathlon Auber-18">
-    </div>
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_qt0b1dqt0b1dqt0b.jpeg" alt="Triathlon Auber-18">
-    </div>
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_wnjja6wnjja6wnjj.jpeg" alt="Triathlon Auber-18">
-    </div>
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_7ovywv7ovywv7ovy.jpeg" alt="Triathlon Auber-18">
-    </div>
-    <div class="special-row">
-      <div class="gallery-item">
-        <img src="Gemini_Generated_Image_h18alqh18alqh18a.jpeg" alt="Triathlon Auber-18">
-      </div>
-      <div class="gallery-item">
-        <img src="Gemini_Generated_Image_t8m23yt8m23yt8m2.jpeg" alt="Triathlon Auber-18">
-      </div>
-      <div class="gallery-item">
-        <img src="Gemini_Generated_Image_wx4zjzwx4zjzwx4z.jpeg" alt="Triathlon Auber-18">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Fin nouvelle section -->
+
 
 <div class="main-content">
 <div class="event-info">
@@ -294,6 +277,7 @@ min-width: 100%;
 <div class="discipline-card">
 <div class="discipline-icon">🏊</div>
 <h3>Natation</h3>
+<img src="nage.jpg" alt="Épreuve de natation" class="discipline-image">
 <p>Distance : 1,5 km ou au choix </p>
 <p>Lieu : Piscine Municipale d'Aubervilliers</p>
 <p>Piscine olympique de 50 mètres, proximité maison Sabine & Alexis pour entreposer votre matériel.</p>
@@ -301,6 +285,7 @@ min-width: 100%;
 <div class="discipline-card">
 <div class="discipline-icon">🚴</div>
 <h3>Cyclisme</h3>
+<img src="velo.jpg" alt="Épreuve de cyclisme" class="discipline-image">
 <p>Distance : 38 km</p>
 <p>Lieu : D'Aubervilliers jusqu'au Parc de la Poudrière et retour Paris</p>
 <p>Un parcours plat et sans voiture le long du canal de l'Ourcq. Débutants friendly. Au pire vous faites juste Aubervilliers-18ème et vous attendez l'IronMan au bar du coin.</p>
@@ -308,11 +293,13 @@ min-width: 100%;
 <div class="discipline-card">
 <div class="discipline-icon">🏃</div>
 <h3>Course à pied</h3>
+<img src="course.jpg" alt="Épreuve de course à pied" class="discipline-image">
 <p>Distance : 5 ou 10 kilomètres</p>
 <p>Lieu : Montmartre, Paris</p>
 <p>2 boucles casse-pattes qui vous rappelleront l'Ascension d'la Butte à 4 pattes par le grimpeur italien Bogliotti en février 2012.</p>
 </div>
 </div>
+
 <div class="sponsors">
 <h2>Nos Partenaires</h2>
 <p>Le Triathlon Auber-18 est fier d'être soutenu par ces marques et institutions qui croient en l'excellence sportive...</p>
