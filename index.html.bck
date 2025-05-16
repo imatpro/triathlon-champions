@@ -43,83 +43,6 @@ font-weight: 300;
 font-size: 1.2rem;
 margin-bottom: 1rem;
 }
-/* Nouvelle section galerie de photos */
-.photo-gallery {
-max-width: 1200px;
-margin: 2rem auto;
-padding: 0 20px;
-}
-.gallery-container {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 15px;
-}
-/* Style spécial pour la dernière ligne qui contient 3 éléments */
-.gallery-container::after {
-content: "";
-flex: auto;
-}
-.special-row {
-grid-column: 1 / span 4;
-display: flex;
-justify-content: center;
-gap: 15px;
-margin-top: 15px;
-}
-.special-row .gallery-item {
-flex: 0 0 calc(25% - 11.25px); /* Pour que les 3 images aient la même taille que celles du haut */
-}
-.gallery-item {
-position: relative;
-overflow: hidden;
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease;
-height: 250px;
-}
-.gallery-item:hover {
-transform: scale(1.03);
-}
-.gallery-item img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-.gallery-caption {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background: rgba(0, 0, 0, 0.7);
-color: white;
-padding: 8px;
-font-size: 0.9rem;
-text-align: center;
-}
-@media (max-width: 992px) {
-  .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .special-row {
-    grid-column: 1 / span 2;
-  }
-  .special-row .gallery-item {
-    flex: 0 0 calc(50% - 7.5px);
-  }
-}
-@media (max-width: 576px) {
-  .gallery-container {
-    grid-template-columns: 1fr;
-  }
-  .special-row {
-    grid-column: 1;
-    flex-direction: column;
-  }
-  .special-row .gallery-item {
-    width: 100%;
-  }
-}
-/* Fin nouvelle section */
 .main-content {
 max-width: 1200px;
 margin: 2rem auto;
@@ -244,44 +167,6 @@ min-width: 100%;
 <p class="date-location">15 juin 2025 • Paris & Aubervilliers</p>
 </div>
 </header>
-
-<!-- Nouvelle section galerie de photos -->
-<section class="photo-gallery">
-  <div class="gallery-container">
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_evddzvevddzvevdd.jpeg" alt="Triathlon Auber-18">
-      <div class="gallery-caption">Épreuve de natation</div>
-    </div>
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_qt0b1dqt0b1dqt0b.jpeg" alt="Triathlon Auber-18">
-      <div class="gallery-caption">Parcours cycliste</div>
-    </div>
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_wnjja6wnjja6wnjj.jpeg" alt="Triathlon Auber-18">
-      <div class="gallery-caption">Course à pied</div>
-    </div>
-    <div class="gallery-item">
-      <img src="Gemini_Generated_Image_7ovywv7ovywv7ovy.jpeg" alt="Triathlon Auber-18">
-      <div class="gallery-caption">Arrivée triathlon</div>
-    </div>
-    <div class="special-row">
-      <div class="gallery-item">
-        <img src="Gemini_Generated_Image_h18alqh18alqh18a.jpeg" alt="Triathlon Auber-18">
-        <div class="gallery-caption">Participants</div>
-      </div>
-      <div class="gallery-item">
-        <img src="Gemini_Generated_Image_t8m23yt8m23yt8m2.jpeg" alt="Triathlon Auber-18">
-        <div class="gallery-caption">Équipe organisatrice</div>
-      </div>
-      <div class="gallery-item">
-        <img src="Gemini_Generated_Image_wx4zjzwx4zjzwx4z.jpeg" alt="Triathlon Auber-18">
-        <div class="gallery-caption">Remise des prix</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Fin nouvelle section -->
-
 <div class="main-content">
 <div class="event-info">
 <div class="info-card">
